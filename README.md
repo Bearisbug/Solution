@@ -26,6 +26,12 @@ plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 ---
 
 ## Swift ![Static Badge](https://img.shields.io/badge/Xcode-7F3AD1?style=flat&logo=xcode&logoColor=black&labelColor=147EFB)
+| 作用         | 快捷键                             |
+| ------------- | --------------------------------- |
+| 开启预览框      | `⌘` + `⇧` + `↩︎`                      |
+| 继续或暂停      | `⌘` + `⌥` + `P`                      |
+| 快速重命名      | `⌘` + `⌃` + `E`                      |
+| 格式化代码      | `⌃` + `⇧` + `I`                      |
 
 
 ---
