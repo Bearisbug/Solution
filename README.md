@@ -33,9 +33,17 @@ plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 | 快速重命名      | `⌘` + `⌃` + `E`                      |
 | 格式化代码      | `⌃` + `⇧` + `I`                      |
 
-
 ---
-
+## TypeScript ![Static Badge](https://img.shields.io/badge/VSCode-3178C6?style=flat&logo=typescript&logoColor=3178C6&labelColor=white)
+##### 1.经典布局形式：
+```typescript
+// 三行网格居中布局
+<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16">
+  <div className="flex flex-row gap-8 row-start-2 items-center w-full h-full">
+  </div>
+</div>
+```
+---
 ## 常用网站
 
 #### 徽章制作 ```https://shields.io/badges```
