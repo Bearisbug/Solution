@@ -1,6 +1,8 @@
 # 解决方法
 
-## Python ![Pycharm](https://img.shields.io/badge/Pycharm-97D587?style=flat&logo=pycharm&logoColor=black&labelColor=dad7cd)
+## <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="15"> Python
+
+![Static Badge](https://img.shields.io/badge/PyCharm-white?style=social&logo=pycharm) ![Static Badge](https://img.shields.io/badge/PyTorch-white?style=social&logo=pytorch)
 
 `checkpoint`
 
@@ -138,9 +140,9 @@ plt.rcParams['font.sans-serif'] = ['PingFang HK']  # 设置找寻到的中文字
 plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 ```
 
----
+## <img src="https://img.icons8.com/?size=100&id=24465&format=png&color=000000" width="15"> Swift
 
-## Swift ![Static Badge](https://img.shields.io/badge/Xcode-7F3AD1?style=flat&logo=xcode&logoColor=black&labelColor=147EFB)
+![Static Badge](https://img.shields.io/badge/Xcode-white?style=social&logo=Xcode)
 
 | 作用         | 快捷键                             |
 | ------------- | --------------------------------- |
@@ -149,9 +151,10 @@ plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 | 快速重命名      | `⌘` + `⌃` + `E`                      |
 | 格式化代码      | `⌃` + `⇧` + `I`                      |
 
----
+## <img src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" width="15"> TypeScript
 
-## TypeScript ![Static Badge](https://img.shields.io/badge/VSCode-3178C6?style=flat&logo=typescript&logoColor=3178C6&labelColor=white)
+![Static Badge](https://img.shields.io/badge/VSCodium-white?style=social&logo=vscodium)
+
 
 ##### 1.经典布局形式：
 
@@ -163,12 +166,14 @@ plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 </div>
 ```
 
----
+## <img src="https://img.icons8.com/?size=100&id=7AFcZ2zirX6Y&format=png&color=000000" width="15"> Dart
+
+![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea) ![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)
 
 ## 常用网站
 
-#### 徽章制作 ```https://shields.io/badges```
+#### 徽章制作 `https://shields.io/badges`
 
 #### Logo资源 `https://simpleicons.org/`
 
-
+#### TechIcons `https://techicons.dev/`
