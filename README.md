@@ -155,6 +155,47 @@ plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 
 ![Static Badge](https://img.shields.io/badge/VSCodium-white?style=social&logo=vscodium)
 
+`fullPage.js`
+
+###### fullPage.js 是一个用于创建全屏滚动网站的 JavaScript 库，适用于单页面应用（SPA）或需要流畅滚动效果的网页。它提供了一种简单的方法来创建全屏滚动、滑动、分屏滚动等效果。
+
+> 在 NextJS 中的示例使用代码如下：
+
+```typescript
+"use client";
+
+import React, { useEffect } from "react";
+import dynamic from "next/dynamic";
+import "fullpage.js/dist/fullpage.css";
+
+// 动态导入 fullpage.js，确保它只在客户端加载
+const FullPageComponent = () => {
+  useEffect(() => {
+    const loadFullPage = async () => {
+      if (typeof window !== "undefined") {
+        //@ts-ignore
+        const fullpage = (await import("fullpage.js")).default;
+        new fullpage("#fullpage", {
+          // 配置选项
+        });
+      }
+    };
+
+    loadFullPage();
+  }, []);
+
+  return (
+    <div id="fullpage">
+      <div className="section">第一屏内容</div>
+      <div className="section">第二屏内容</div>
+      <div className="section">第三屏内容</div>
+    </div>
+  );
+};
+
+export default FullPageComponent;
+
+```
 
 ##### 1.经典布局形式：
 
