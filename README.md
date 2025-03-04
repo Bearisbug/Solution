@@ -1,6 +1,6 @@
 # 解决方法
 
-## Python
+## <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="15"> Python
 
 [![Static Badge](https://img.shields.io/badge/PyCharm-white?style=social&logo=pycharm)](https://www.jetbrains.com/pycharm/) [![Static Badge](https://img.shields.io/badge/PyTorch-white?style=social&logo=pytorch)](https://pytorch.org/)
 
@@ -140,7 +140,7 @@ plt.rcParams['font.sans-serif'] = ['PingFang HK']  # 设置找寻到的中文字
 plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 ```
 
-## Swift
+## <img src="https://img.icons8.com/?size=100&id=24465&format=png&color=000000" width="15"> Swift
 
 [![Static Badge](https://img.shields.io/badge/Xcode-white?style=social&logo=Xcode)](https://developer.apple.com/xcode/)
 
@@ -151,7 +151,7 @@ plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 | 快速重命名 | `⌘`+`⌃`+`E`    |
 | 格式化代码 | `⌃`+`⇧`+`I`    |
 
-## TypeScript
+## <img src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" width="15"> TypeScript
 
 [![Static Badge](https://img.shields.io/badge/VSCodium-white?style=social&logo=vscodium)](https://vscodium.com/) [![Static Badge](https://img.shields.io/badge/TailWindCSS-white?style=social&logo=tailwindcss)](https://tailwindcss.com/)
 
@@ -281,9 +281,9 @@ export default FullPageComponent;
 ---
 
 
-## Dart
+## <img src="https://img.icons8.com/?size=100&id=7AFcZ2zirX6Y&format=png&color=000000" width="15"> Dart
 
-[![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea)](https://www.jetbrains.com/idea/)[![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)](https://flutter.dev/)
+[![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea)](https://www.jetbrains.com/idea/) [![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)](https://flutter.dev/)
 
 ## 常用网站
 
