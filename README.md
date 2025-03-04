@@ -1,8 +1,8 @@
 # 解决方法
 
-## <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="15"> Python
+## Python
 
-![Static Badge](https://img.shields.io/badge/PyCharm-white?style=social&logo=pycharm) ![Static Badge](https://img.shields.io/badge/PyTorch-white?style=social&logo=pytorch)
+[![Static Badge](https://img.shields.io/badge/PyCharm-white?style=social&logo=pycharm)](https://www.jetbrains.com/pycharm/) [![Static Badge](https://img.shields.io/badge/PyTorch-white?style=social&logo=pytorch)](https://pytorch.org/)
 
 `checkpoint`
 
@@ -140,20 +140,20 @@ plt.rcParams['font.sans-serif'] = ['PingFang HK']  # 设置找寻到的中文字
 plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 ```
 
-## <img src="https://img.icons8.com/?size=100&id=24465&format=png&color=000000" width="15"> Swift
+## Swift
 
-![Static Badge](https://img.shields.io/badge/Xcode-white?style=social&logo=Xcode)
+[![Static Badge](https://img.shields.io/badge/Xcode-white?style=social&logo=Xcode)](https://developer.apple.com/xcode/)
 
-| 作用         | 快捷键                             |
-| ------------- | --------------------------------- |
-| 开启预览框      | `⌘` + `⇧` + `↩︎`                      |
-| 继续或暂停      | `⌘` + `⌥` + `P`                      |
-| 快速重命名      | `⌘` + `⌃` + `E`                      |
-| 格式化代码      | `⌃` + `⇧` + `I`                      |
+| 作用       | 快捷键                       |
+| ------------ | ------------------------------ |
+| 开启预览框 | `⌘`+`⇧`+`↩︎` |
+| 继续或暂停 | `⌘`+`⌥`+`P`    |
+| 快速重命名 | `⌘`+`⌃`+`E`    |
+| 格式化代码 | `⌃`+`⇧`+`I`    |
 
-## <img src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" width="15"> TypeScript
+## TypeScript
 
-![Static Badge](https://img.shields.io/badge/VSCodium-white?style=social&logo=vscodium)
+[![Static Badge](https://img.shields.io/badge/VSCodium-white?style=social&logo=vscodium)](https://vscodium.com/) [![Static Badge](https://img.shields.io/badge/TailWindCSS-white?style=social&logo=tailwindcss)](https://tailwindcss.com/)
 
 `fullPage.js`
 
@@ -194,22 +194,96 @@ const FullPageComponent = () => {
 };
 
 export default FullPageComponent;
-
 ```
 
-##### 1.经典布局形式：
+`Flex & Grid`
 
-```typescript
-// 三行网格居中布局
-<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16">
-  <div className="flex flex-row gap-8 row-start-2 items-center w-full h-full">
-  </div>
-</div>
-```
+#### **1️⃣ Flexbox 对应表**
 
-## <img src="https://img.icons8.com/?size=100&id=7AFcZ2zirX6Y&format=png&color=000000" width="15"> Dart
+| **功能**                         | **CSS 代码**                    | **Tailwind CSS 类名** |
+| ---------------------------------------- | --------------------------------------- | ----------------------------- |
+| **Flex 容器**                    | `display: flex;`                  | `flex`                  |
+| **内联 Flex 容器**               | `display: inline-flex;`           | `inline-flex`           |
+| **主轴方向**                     | `flex-direction: row;`            | `flex-row`              |
+|                                        | `flex-direction: row-reverse;`    | `flex-row-reverse`      |
+|                                        | `flex-direction: column;`         | `flex-col`              |
+|                                        | `flex-direction: column-reverse;` | `flex-col-reverse`      |
+| **主轴对齐（justify-content）**  | `justify-content: flex-start;`    | `justify-start`         |
+|                                        | `justify-content: center;`        | `justify-center`        |
+|                                        | `justify-content: flex-end;`      | `justify-end`           |
+|                                        | `justify-content: space-between;` | `justify-between`       |
+|                                        | `justify-content: space-around;`  | `justify-around`        |
+|                                        | `justify-content: space-evenly;`  | `justify-evenly`        |
+| **交叉轴对齐（align-items）**    | `align-items: flex-start;`        | `items-start`           |
+|                                        | `align-items: center;`            | `items-center`          |
+|                                        | `align-items: flex-end;`          | `items-end`             |
+|                                        | `align-items: stretch;`           | `items-stretch`         |
+| **多行对齐（align-content）**    | `align-content: flex-start;`      | `content-start`         |
+|                                        | `align-content: center;`          | `content-center`        |
+|                                        | `align-content: flex-end;`        | `content-end`           |
+|                                        | `align-content: space-between;`   | `content-between`       |
+|                                        | `align-content: space-around;`    | `content-around`        |
+| **换行**                         | `flex-wrap: wrap;`                | `flex-wrap`             |
+|                                        | `flex-wrap: nowrap;`              | `flex-nowrap`           |
+|                                        | `flex-wrap: wrap-reverse;`        | `flex-wrap-reverse`     |
+| **子元素顺序（order）**          | `order: 1;`                       | `order-1`               |
+|                                        | `order: -1;`                      | `order-first`           |
+|                                        | `order: 9999;`                    | `order-last`            |
+| **子元素扩展（flex-grow）**      | `flex-grow: 1;`                   | `flex-grow`             |
+|                                        | `flex-grow: 0;`                   | `flex-grow-0`           |
+| **子元素收缩（flex-shrink）**    | `flex-shrink: 1;`                 | `flex-shrink`           |
+|                                        | `flex-shrink: 0;`                 | `flex-shrink-0`         |
+| **子元素基础大小（flex-basis）** | `flex-basis: 100px;`              | `basis-[100px]`         |
+| **子元素 flex 缩写**             | `flex: 1 1 0;`                    | `flex-1`                |
+|                                        | `flex: 0 0 auto;`                 | `flex-none`             |
 
-![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea) ![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)
+---
+
+#### **2️⃣ Grid 对应表**
+
+| **功能**                            | **CSS 代码**                           | **Tailwind CSS 类名**  |
+| ------------------------------------------- | ---------------------------------------------- | ------------------------------ |
+| **Grid 容器**                       | `display: grid;`                         | `grid`                   |
+| **内联 Grid 容器**                  | `display: inline-grid;`                  | `inline-grid`            |
+| **列数（grid-template-columns）**   | `grid-template-columns: repeat(3, 1fr);` | `grid-cols-3`            |
+|                                           | `grid-template-columns: 1fr 2fr;`        | `grid-cols-[1fr_2fr]`    |
+| **行数（grid-template-rows）**      | `grid-template-rows: repeat(3, 100px);`  | `grid-rows-3`            |
+|                                           | `grid-template-rows: 100px auto;`        | `grid-rows-[100px_auto]` |
+| **列间距（column-gap）**            | `column-gap: 16px;`                      | `gap-x-4`                |
+| **行间距（row-gap）**               | `row-gap: 16px;`                         | `gap-y-4`                |
+| **网格间距（gap）**                 | `gap: 16px;`                             | `gap-4`                  |
+| **子元素跨列（grid-column）**       | `grid-column: span 2;`                   | `col-span-2`             |
+|                                           | `grid-column: span 3 / span 3;`          | `col-span-3`             |
+| **子元素跨行（grid-row）**          | `grid-row: span 2;`                      | `row-span-2`             |
+| **对齐方式（justify-items）**       | `justify-items: start;`                  | `justify-items-start`    |
+|                                           | `justify-items: center;`                 | `justify-items-center`   |
+|                                           | `justify-items: end;`                    | `justify-items-end`      |
+|                                           | `justify-items: stretch;`                | `justify-items-stretch`  |
+| **对齐方式（align-items）**         | `align-items: start;`                    | `items-start`            |
+|                                           | `align-items: center;`                   | `items-center`           |
+|                                           | `align-items: end;`                      | `items-end`              |
+|                                           | `align-items: stretch;`                  | `items-stretch`          |
+| **内容对齐方式（justify-content）** | `justify-content: start;`                | `justify-start`          |
+|                                           | `justify-content: center;`               | `justify-center`         |
+|                                           | `justify-content: end;`                  | `justify-end`            |
+|                                           | `justify-content: space-between;`        | `justify-between`        |
+|                                           | `justify-content: space-around;`         | `justify-around`         |
+|                                           | `justify-content: space-evenly;`         | `justify-evenly`         |
+| **内容对齐方式（align-content）**   | `align-content: start;`                  | `content-start`          |
+|                                           | `align-content: center;`                 | `content-center`         |
+|                                           | `align-content: end;`                    | `content-end`            |
+|                                           | `align-content: space-between;`          | `content-between`        |
+|                                           | `align-content: space-around;`           | `content-around`         |
+| **子元素对齐方式（place-self）**    | `place-self: center;`                    | `place-self-center`      |
+| **自动布局（auto-flow）**           | `grid-auto-flow: row;`                   | `grid-flow-row`          |
+|                                           | `grid-auto-flow: column;`                | `grid-flow-col`          |
+
+---
+
+
+## Dart
+
+[![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea)](https://www.jetbrains.com/idea/)[![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)](https://flutter.dev/)
 
 ## 常用网站
 
@@ -218,3 +292,4 @@ export default FullPageComponent;
 #### Logo资源 `https://simpleicons.org/`
 
 #### TechIcons `https://techicons.dev/`
+
