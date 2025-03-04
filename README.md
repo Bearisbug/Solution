@@ -1,4 +1,4 @@
-# 解决方法
+# <img src="https://s1.locimg.com/2025/03/04/28cfb15e65029.png" width=20> 虫の方法
 
 ## <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="15"> Python
 
