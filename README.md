@@ -278,9 +278,16 @@ export default FullPageComponent;
 | **自动布局（auto-flow）**           | `grid-auto-flow: row;`                   | `grid-flow-row`          |
 |                                           | `grid-auto-flow: column;`                | `grid-flow-col`          |
 
----
-
-
+`tailwindcss`
+##### TailWindCSS V4 UI 适配问题
+```css
+/* 将 app.css 的 @import "tailwindcss" 替换为以下内容 */
+/* 可解决 MUI 等主流 UI 库的适配问题。*/
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+- @import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+```
 ## <img src="https://img.icons8.com/?size=100&id=7AFcZ2zirX6Y&format=png&color=000000" width="15"> Dart
 
 [![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea)](https://www.jetbrains.com/idea/) [![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)](https://flutter.dev/)
