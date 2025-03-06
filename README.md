@@ -139,7 +139,7 @@ for font in fm.findSystemFonts(fontpaths=None, fontext='ttf'):
 # 列出所有字体名称
 print(sorted([f.name for f in fm.fontManager.ttflist]))
 
-plt.rcParams['font.sans-serif'] = ['PingFang HK']  # 设置找寻到的中文字体为
+plt.rcParams['font.sans-serif'] = ['PingFang HK']  # 或者 plt.rcParams['font.family'] = 'PingFang HK'  
 plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 ```
 `os`
