@@ -5,6 +5,7 @@
 [![Static Badge](https://img.shields.io/badge/PyCharm-white?style=social&logo=pycharm)](https://www.jetbrains.com/pycharm/) [![Static Badge](https://img.shields.io/badge/PyTorch-white?style=social&logo=pytorch)](https://pytorch.org/)
 
 `checkpoint`
+##### 权重文件结构
 
 ###### 1. PyTorch 模型权重文件
 
@@ -121,9 +122,11 @@ read_darknet_weights("yolov3.weights")
 
 `matplotlib`
 
-##### 1.中文字体问题
+##### 中文字体问题
 
-在使用 `matplotlib` 绘制图表时，可能会遇到中文字体显示为方块或者无法显示负号的问题。这是因为 `matplotlib` 默认字体可能不支持中文。
+###### 在使用 `matplotlib` 绘制图表时，可能会遇到中文字体显示为方块或者无法显示负号的问题。这是因为 `matplotlib` 默认字体可能不支持中文。
+
+
 **解决方法（设置指定支持中文的字体）：**
 
 ```python
@@ -138,6 +141,48 @@ print(sorted([f.name for f in fm.fontManager.ttflist]))
 
 plt.rcParams['font.sans-serif'] = ['PingFang HK']  # 设置找寻到的中文字体为
 plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
+```
+`os`
+##### 文件遍历
+###### 使用 os 库可以方便地遍历指定目录及其子目录中的所有文件和文件夹。这在批量处理文件或者查找特定文件时非常有用。
+```python
+import os
+
+def traverse_directory(path):
+    # os.walk 会递归遍历目录，返回三元组 (当前目录, 子目录列表, 文件列表)
+    # root 是当前遍历到的目录。
+    # dirs 是当前目录下的子目录名列表（不包含路径）。
+    # files 是当前目录下的所有文件名列表（不包含路径）。
+    for root, dirs, files in os.walk(path):
+        print("当前目录：", root)
+        print("子目录：", dirs)
+        print("文件：", files)
+        print("-" * 40)
+
+# 示例：遍历当前目录
+traverse_directory(".")
+```
+
+##### 设置环境变量
+###### 在 Python 程序中，有时需要设置或修改环境变量（常用于设置代理或者镜像源）来控制程序行为。可以使用 os.environ 这个字典来进行环境变量的读取和设置。
+```python
+
+
+import os
+
+# 设置环境变量 ( HTTP 和 HTTPS 代理作为示例 )
+os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
+os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+
+# 获取环境变量
+value = os.environ.get('HTTP_PROXY')
+print("HTTP_PROXY:", value)
+
+# 判断某个环境变量是否存在
+if 'HTTP_PROXY' in os.environ:
+    print("环境变量 HTTP_PROXY 已设置")
+else:
+    print("环境变量 HTTP_PROXY 未设置")
 ```
 
 ## <img src="https://img.icons8.com/?size=100&id=24465&format=png&color=000000" width="15"> Swift
