@@ -196,6 +196,11 @@ else:
 | 快速重命名 | `⌘`+`⌃`+`E`    |
 | 格式化代码 | `⌃`+`⇧`+`I`    |
 
+##### 导入项目之后无法预览 View
+###### View 报错: Select a scheme that builds a target which contains the current file, or add this file to a target that is built by the current scheme. 尝试输入:
+```bash
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
 ## <img src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" width="15"> TypeScript
 
 [![Static Badge](https://img.shields.io/badge/VSCodium-white?style=social&logo=vscodium)](https://vscodium.com/) [![Static Badge](https://img.shields.io/badge/TailWindCSS-white?style=social&logo=tailwindcss)](https://tailwindcss.com/)
