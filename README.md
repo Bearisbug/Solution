@@ -341,6 +341,23 @@ export default FullPageComponent;
 ## <img src="https://img.icons8.com/?size=100&id=7AFcZ2zirX6Y&format=png&color=000000" width="15"> Dart
 
 [![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea)](https://www.jetbrains.com/idea/) [![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)](https://flutter.dev/)
+##### iOS 和 Android 环境快速配置
+```bash
+# iOS
+# 确保已经安装 Xcode
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -runFirstLaunch
+brew install cocoapods
+# 进入项目的 ios 文件夹
+pod install
+
+# Android
+# 确保安装了 Android Studio 如果没有请输入
+brew install android-studio
+# 在 SDK Manage > SDK Tools 中安装 Android SDK Command-Line Tools
+# 接受license
+flutter doctor --android-licenses
+```
 
 ## 常用网站
 
