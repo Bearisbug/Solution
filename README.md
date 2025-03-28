@@ -341,6 +341,9 @@ export default FullPageComponent;
 ## <img src="https://img.icons8.com/?size=100&id=7AFcZ2zirX6Y&format=png&color=000000" width="15"> Dart
 
 [![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea)](https://www.jetbrains.com/idea/) [![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)](https://flutter.dev/)
+##### 第三方库汇总
+###### UI 库： [Forui](https://forui.dev/docs) [FL-Chart](https://pub.dev/packages/fl_chart)
+###### 工具库：[location](https://pub.dev/packages/location)
 ##### iOS 和 Android 环境快速配置
 ```bash
 # iOS
@@ -357,6 +360,10 @@ brew install android-studio
 # 在 SDK Manage > SDK Tools 中安装 Android SDK Command-Line Tools
 # 接受license
 flutter doctor --android-licenses
+
+# NDK 版本更新
+# 找到/opt/homebrew/Caskroom/flutter/3.29.2/flutter/packages/flutter_tools/gradle/src/main/groovy/flutter.groovy
+# 修改默认的 version 即可
 ```
 
 ## 常用网站
