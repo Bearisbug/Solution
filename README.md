@@ -343,7 +343,7 @@ export default FullPageComponent;
 [![Static Badge](https://img.shields.io/badge/Intellij_IDEA-white?style=social&logo=intellijidea)](https://www.jetbrains.com/idea/) [![Static Badge](https://img.shields.io/badge/Flutter-white?style=social&logo=flutter)](https://flutter.dev/)
 ##### 第三方库汇总
 ###### UI 库： [Forui](https://forui.dev/docs) [FL-Chart](https://pub.dev/packages/fl_chart)
-###### 工具库：[location](https://pub.dev/packages/location)
+###### 工具库：[location](https://pub.dev/packages/location) [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons)
 ##### iOS 和 Android 环境快速配置
 ```bash
 # iOS
