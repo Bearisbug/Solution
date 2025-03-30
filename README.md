@@ -365,7 +365,15 @@ flutter doctor --android-licenses
 # 找到/opt/homebrew/Caskroom/flutter/3.29.2/flutter/packages/flutter_tools/gradle/src/main/groovy/flutter.groovy
 # 修改默认的 version 即可
 ```
-
+## 🪜 & 🧙‍♀️
+[![Static Badge](https://img.shields.io/badge/Key-white?style=social&logo=webauthn)](https://acl4ssr-sub.github.io/)
+```bash
+# X-UI
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+iptables -I INPUT -p tcp --dport 443 -j ACCEPT
+iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+sudo ufw disable
+```
 ## 常用网站
 
 #### 徽章制作 `https://shields.io/badges`
