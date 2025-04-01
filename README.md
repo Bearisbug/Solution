@@ -142,6 +142,33 @@ print(sorted([f.name for f in fm.fontManager.ttflist]))
 plt.rcParams['font.sans-serif'] = ['PingFang HK']  # 或者 plt.rcParams['font.family'] = 'PingFang HK'  
 plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
 ```
+
+`openai`
+###### 简易 API 调用示例
+```python
+from openai import OpenAI
+
+client = OpenAI(api_key="<Your API Key>")
+client.base_url = "<Your API URL>"
+
+# 完整输出
+response = client.chat.completions.create(
+    model="deepseek-r1",
+    messages=[
+        {"role": "user", "content": "你是谁"}
+    ]
+)
+print(response.choices[0].message.content)
+
+# 流式输出
+stream = client.chat.completions.create(
+    model="deepseek-r1",
+    messages=[{"role": "user", "content": "根据中国古代圣人孔子的思想，人生的意义是什么？"}],
+    stream=True,
+)
+for chunk in stream:
+    print(chunk.choices[0].delta.content or "", end="")
+```
 `os`
 ##### 文件遍历
 ###### 使用 os 库可以方便地遍历指定目录及其子目录中的所有文件和文件夹。这在批量处理文件或者查找特定文件时非常有用。
