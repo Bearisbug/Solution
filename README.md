@@ -3,6 +3,22 @@
 ## <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="15"> Python
 
 [![Static Badge](https://img.shields.io/badge/PyCharm-white?style=social&logo=pycharm)](https://www.jetbrains.com/pycharm/) [![Static Badge](https://img.shields.io/badge/PyTorch-white?style=social&logo=pytorch)](https://pytorch.org/)
+`pypi`
+##### 中国镜像列表
+```bash
+# 前缀
+pip install 包名 -i <url>
+# 腾讯
+https://mirrors.cloud.tencent.com/pypi/simple/
+# 清华大学
+https://pypi.tuna.tsinghua.edu.cn/simple/
+# 中科大
+https://pypi.mirrors.ustc.edu.cn/simple/
+# 阿里云
+https://mirrors.aliyun.com/pypi/simple/
+# 网易
+http://mirrors.163.com/pypi/simple/
+```
 
 `checkpoint`
 ##### 权重文件结构
