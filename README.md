@@ -3,9 +3,10 @@
 ## <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="15"> Python
 
 [![Static Badge](https://img.shields.io/badge/PyCharm-white?style=social&logo=pycharm)](https://www.jetbrains.com/pycharm/) [![Static Badge](https://img.shields.io/badge/PyTorch-white?style=social&logo=pytorch)](https://pytorch.org/)
-`pypi`
+
 ##### 中国镜像列表
 ```bash
+# pypi
 # 前缀
 pip install 包名 -i <url>
 # 腾讯
@@ -18,6 +19,12 @@ https://pypi.mirrors.ustc.edu.cn/simple/
 https://mirrors.aliyun.com/pypi/simple/
 # 网易
 http://mirrors.163.com/pypi/simple/
+
+# Huggingface
+export HF_ENDPOINT=https://hf-mirror.com
+# CLI 数据集与模型下载 
+huggingface-cli download --repo-type dataset --resume-download wikitext --local-dir wikitext
+huggingface-cli download --resume-download gpt2 --local-dir gpt2
 ```
 
 `checkpoint`
