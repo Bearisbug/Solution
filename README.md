@@ -424,6 +424,32 @@ iptables -I INPUT -p tcp --dport 443 -j ACCEPT
 iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 sudo ufw disable
 ```
+## 🌐 [Fast Reverse Proxy](https://github.com/fatedier/frp)
+```bash
+wget https://github.com/fatedier/frp/releases/download/v0.61.2/frp_0.61.2_linux_amd64.tar.gz
+tar -zxvf frp_0.61.2_linux_amd64.tar.gz
+cd frp_0.61.2_linux_amd64
+# Server
+nano frps.ini
+[common]
+bind_port = 7000
+dashboard_port = 7500
+dashboard_user = admin
+dashboard_pwd = admin123
+./frpc -c frps.ini
+
+# Client
+[common]
+server_addr = your_vps_ip
+server_port = 7000
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 2222
+./frpc -c frpc.ini
+```
+
 ## 常用网站
 
 #### 徽章制作 `https://shields.io/badges`
