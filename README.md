@@ -1,4 +1,4 @@
-# <img src="https://i.imgur.com/eTobOHZ.jpeg" width=20> 虫の方法
+# <img src="https://i.imgur.com/iUTRSbw.png" width=20> 虫の方法
 
 ## <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="15"> Python
 
